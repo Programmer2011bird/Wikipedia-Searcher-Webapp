@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wikipedia Searcher Web App</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href=
+          "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+<body class="bg-dark text-light">
+    <div class="container g-5 position-relative mt-5" id="SearchDiv">
+        <form action="/findHtml" method="post" class="form-group col">
+            <input type="text" name="TITLE" id="TITLE" class="form-control row m-1" placeholder="Type A Title">
+            
+            <button type="submit" class="btn btn-outline-primary row m-1">Main Page<i class="bi bi-search"></i></button>            
+        </form>
+        
+        <form action="/Related_Pages" method="post" class="form-group col">
+            <input type="text" name="TITLE" id="TITLE" class="form-control row m-1" placeholder="Type A Title">
+            
+            <button type="submit" class="btn btn-outline-primary row m-1">Related Pages<i class="bi bi-search"></i></button>            
+        </form>
+
+        <form action="/Summary" method="post" class="form-group col">
+            <input type="text" name="TITLE" id="TITLE" class="form-control row m-1" placeholder="Type A Title">
+            
+            <button type="submit" class="btn btn-outline-primary row m-1">Summary<i class="bi bi-search"></i></button>      
+        </form>
+        
+        <form action="/News" method="post" class="form-group col">
+            <button type="submit" class="btn btn-outline-primary row m-1">News<i class="bi bi-search"></i></button>      
+        </form>
+    </div>
+</body>
+</html>
